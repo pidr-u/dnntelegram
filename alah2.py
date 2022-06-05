@@ -6,7 +6,7 @@ bot = Bot(token=token)
 dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start(message):
-    await message.reply('Привет, бот создан скриптом https://github.com/pidr-u/dnntelegram/upload!\nСкинь номер сюда и я отправлю информацию о нем!\nКанал: @zalupalaha. Бота писал @Allah6661(я) по всем вопросам сюда. номер писать без плюса, работет только с русскими номерами.')
+    await message.reply('Привет, бот создан скриптом https://github.com/pidr-u/dnntelegram!\nСкинь номер сюда и я отправлю информацию о нем!\nКанал: @zalupalaha. Бота писал @Allah6661(я) по всем вопросам сюда. номер писать без плюса, работет только с русскими номерами.')
 @dp.message_handler(content_types=['text'])
 async def text(message):
     if message.chat.type != "private":
